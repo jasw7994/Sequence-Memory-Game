@@ -6,7 +6,7 @@ module register (
     output logic [3:0]  rd1,
 
     input  logic        we,
-    input  logic [6:0]  rd,
+    input  logic [6:0]  rs2,
     input  logic [3:0]  wd
 );
 

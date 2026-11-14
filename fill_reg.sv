@@ -4,6 +4,7 @@ module fill_reg(
 
     logic [3:0] rand_num;
     logic [6:0] position;
+    logic 
 
     always_ff @(posedge clk or posedge rst) begin
         if (rst) begin
@@ -23,10 +24,9 @@ module fill_reg(
     register reg (
         .clk(clk),
         .rst(1'b0),
-        .rs1(4'b0000),
-        .rd1(data_out),
+        .rs1(6'b000000),
         .we(should_write),
-        .rd(position),
+        .rs2(position),
         .wd(rand_num)
     )
 endmodule
